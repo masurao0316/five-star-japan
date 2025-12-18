@@ -6,21 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>お問い合わせ | FIVE-STAR JAPAN株式会社</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         .contact-form input,
         .contact-form textarea {
             width: 100%;
-            padding: 12px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
             border-radius: 4px;
             font-size: 16px;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            background-color: white;
         }
 
         .contact-form label {
             display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -35,46 +46,53 @@
                     <li><a href="company.html" class="nav-link">会社概要</a></li>
                     <li><a href="service.html" class="nav-link">事業内容</a></li>
                     <li><a href="cases.html" class="nav-link">実績・事例</a></li>
-                    <li><a href="contact.html" class="nav-link active btn btn-primary">お問い合わせ</a></li>
+                    <li><a href="contact.html" class="nav-link active btn btn-primary"
+                            style="padding: 10px 25px; color: white;">お問い合わせ</a></li>
                 </ul>
-                <button class="mobile-menu-btn">☰</button>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </nav>
         </div>
     </header>
 
     <main style="padding-top: var(--header-height);">
-        <section class="section bg-light">
+        <section class="section bg-light" style="padding-top: 80px; padding-bottom: 80px;">
             <div class="container text-center">
-                <h1>お問い合わせ</h1>
-                <p>Contact</p>
+                <h1 style="color: var(--color-primary); font-size: 2.5rem; margin-bottom: 10px;">お問い合わせ</h1>
+                <p style="letter-spacing: 0.2em; font-family: var(--font-feature);">CONTACT</p>
             </div>
         </section>
 
         <section class="section">
-            <div class="container" style="max-width: 800px;">
+            <div class="container" style="max-width: 900px;">
                 <div class="text-center mb-xl">
-                    <p>
+                    <p style="margin-bottom: 40px;">
                         ロードサービスの依頼、お見積もり、その他ご質問など、お気軽にお問い合わせください。<br>
                         お急ぎの場合はお電話にてご連絡ください。
                     </p>
                     <div
-                        style="background-color: #fff; padding: 20px; border: 2px solid var(--color-primary); border-radius: 8px; margin: 30px auto; display: inline-block;">
-                        <p style="font-size: 14px; color: #666; margin-bottom: 5px;">お電話でのお問い合わせ</p>
-                        <p style="font-size: 32px; font-weight: bold; color: var(--color-primary);">03-1234-5678</p>
-                        <p style="font-size: 12px; color: #999;">24時間365日受付</p>
+                        style="background-color: var(--color-primary); color: white; padding: 40px; border-radius: 8px; display: inline-block; width: 100%; max-width: 600px; box-shadow: 0 10px 30px rgba(0, 68, 204, 0.2);">
+                        <p style="font-size: 14px; margin-bottom: 10px; letter-spacing: 0.1em; opacity: 0.9;">
+                            お電話でのお問い合わせ</p>
+                        <p
+                            style="font-size: 40px; font-weight: bold; font-family: var(--font-feature); margin-bottom: 5px;">
+                            03-1234-5678</p>
+                        <p style="font-size: 12px; opacity: 0.8;">24時間365日受付</p>
                     </div>
                 </div>
 
-                <div class="bg-white"
-                    style="padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-                    <h2 class="text-center mb-lg">お問い合わせフォーム</h2>
+                <div class="bg-white" style="padding: 0;">
+                    <h2 class="text-center mb-lg" style="font-size: 1.8rem;">お問い合わせフォーム</h2>
                     <form class="contact-form">
                         <div>
-                            <label for="name">お名前 <span style="color: red;">*</span></label>
+                            <label for="name">お名前 <span style="color: var(--color-primary);">*</span></label>
                             <input type="text" id="name" name="name" placeholder="例：山田 太郎" required>
                         </div>
                         <div>
-                            <label for="email">メールアドレス <span style="color: red;">*</span></label>
+                            <label for="email">メールアドレス <span style="color: var(--color-primary);">*</span></label>
                             <input type="email" id="email" name="email" placeholder="例：info@example.com" required>
                         </div>
                         <div>
@@ -82,12 +100,12 @@
                             <input type="tel" id="tel" name="tel" placeholder="例：090-1234-5678">
                         </div>
                         <div>
-                            <label for="message">お問い合わせ内容 <span style="color: red;">*</span></label>
-                            <textarea id="message" name="message" rows="6" placeholder="ご用件をご記入ください"
+                            <label for="message">お問い合わせ内容 <span style="color: var(--color-primary);">*</span></label>
+                            <textarea id="message" name="message" rows="8" placeholder="ご用件をご記入ください"
                                 required></textarea>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary" style="min-width: 200px;">送信する</button>
+                            <button type="submit" class="btn btn-primary" style="min-width: 250px;">送信する</button>
                         </div>
                     </form>
                 </div>
@@ -97,6 +115,25 @@
 
     <footer class="footer">
         <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>FIVE-STAR JAPAN株式会社</h3>
+                    <p class="mb-md" style="color: #aaa; font-size: 0.9rem; line-height: 2;">
+                        〒100-0005<br>
+                        東京都千代田区丸の内1-1-1<br>
+                        TEL: 03-1234-5678
+                    </p>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">トップページ</a></li>
+                        <li><a href="company.html">会社概要</a></li>
+                        <li><a href="service.html">事業内容</a></li>
+                        <li><a href="cases.html">実績・事例</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="copyright">
                 &copy; 2024 FIVE-STAR JAPAN Co., Ltd. All Rights Reserved.
             </div>

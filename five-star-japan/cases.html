@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>実績・事例 | FIVE-STAR JAPAN株式会社</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,67 +19,81 @@
                     <li><a href="company.html" class="nav-link">会社概要</a></li>
                     <li><a href="service.html" class="nav-link">事業内容</a></li>
                     <li><a href="cases.html" class="nav-link active">実績・事例</a></li>
-                    <li><a href="contact.html" class="nav-link btn btn-primary">お問い合わせ</a></li>
+                    <li><a href="contact.html" class="nav-link btn btn-primary"
+                            style="padding: 10px 25px; color: white;">お問い合わせ</a></li>
                 </ul>
-                <button class="mobile-menu-btn">☰</button>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </nav>
         </div>
     </header>
 
     <main style="padding-top: var(--header-height);">
-        <section class="section bg-light">
+        <section class="section bg-light" style="padding-top: 80px; padding-bottom: 80px;">
             <div class="container text-center">
-                <h1>実績・事例</h1>
-                <p>Cases</p>
+                <h1 style="color: var(--color-primary); font-size: 2.5rem; margin-bottom: 10px;">実績・事例</h1>
+                <p style="letter-spacing: 0.2em; font-family: var(--font-feature);">CASES</p>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px;">
+                <div class="grid-cols-3">
                     <!-- Case 1 -->
-                    <div style="border: 1px solid #eee; border-radius: 8px; overflow: hidden;">
+                    <div
+                        style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
                         <div
                             style="height: 200px; background-color: #ddd; display: flex; align-items: center; justify-content: center;">
                             <span style="color: #666;">事例画像</span>
                         </div>
-                        <div style="padding: 20px;">
-                            <h3 style="font-size: 18px; margin-bottom: 10px;">高速道路での事故車搬送</h3>
-                            <p style="font-size: 14px; color: #666; margin-bottom: 10px;">東京都内 高速道路</p>
-                            <p>
-                                追突事故により走行不能となった車両を、警察の誘導のもと安全に搬送いたしました。<br>
+                        <div style="padding: 25px;">
+                            <h3 style="font-size: 18px; margin-bottom: 10px; color: var(--color-primary);">高速道路での事故車搬送
+                            </h3>
+                            <p style="font-size: 13px; color: #999; margin-bottom: 15px; letter-spacing: 0.1em;">TOKYO /
+                                EXPWAY</p>
+                            <p style="font-size: 14px; line-height: 1.6;">
+                                追突事故により走行不能となった車両を、警察の誘導のもと安全に搬送いたしました。
                                 二次被害防止のため、迅速な作業を徹底しました。
                             </p>
                         </div>
                     </div>
 
                     <!-- Case 2 -->
-                    <div style="border: 1px solid #eee; border-radius: 8px; overflow: hidden;">
+                    <div
+                        style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
                         <div
                             style="height: 200px; background-color: #ddd; display: flex; align-items: center; justify-content: center;">
                             <span style="color: #666;">事例画像</span>
                         </div>
-                        <div style="padding: 20px;">
-                            <h3 style="font-size: 18px; margin-bottom: 10px;">雪道でのスタック救援</h3>
-                            <p style="font-size: 14px; color: #666; margin-bottom: 10px;">山間部エリア</p>
-                            <p>
-                                大雪により動けなくなった車両を、4WDレッカー車にて救出。<br>
+                        <div style="padding: 25px;">
+                            <h3 style="font-size: 18px; margin-bottom: 10px; color: var(--color-primary);">雪道でのスタック救援
+                            </h3>
+                            <p style="font-size: 13px; color: #999; margin-bottom: 15px; letter-spacing: 0.1em;">
+                                MOUNTAIN AREA</p>
+                            <p style="font-size: 14px; line-height: 1.6;">
+                                大雪により動けなくなった車両を、4WDレッカー車にて救出。
                                 チェーン装着のサポートも行い、無事に帰路につかれました。
                             </p>
                         </div>
                     </div>
 
                     <!-- Case 3 -->
-                    <div style="border: 1px solid #eee; border-radius: 8px; overflow: hidden;">
+                    <div
+                        style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
                         <div
                             style="height: 200px; background-color: #ddd; display: flex; align-items: center; justify-content: center;">
                             <span style="color: #666;">事例画像</span>
                         </div>
-                        <div style="padding: 20px;">
-                            <h3 style="font-size: 18px; margin-bottom: 10px;">深夜のバッテリー上がり対応</h3>
-                            <p style="font-size: 14px; color: #666; margin-bottom: 10px;">住宅街エリア</p>
-                            <p>
-                                深夜2時に「エンジンがかからない」とのご連絡。<br>
+                        <div style="padding: 25px;">
+                            <h3 style="font-size: 18px; margin-bottom: 10px; color: var(--color-primary);">深夜のバッテリー上がり対応
+                            </h3>
+                            <p style="font-size: 13px; color: #999; margin-bottom: 15px; letter-spacing: 0.1em;">
+                                RESIDENTIAL AREA</p>
+                            <p style="font-size: 14px; line-height: 1.6;">
+                                深夜2時に「エンジンがかからない」とのご連絡。
                                 到着後5分でエンジン始動に成功し、大変感謝いただきました。
                             </p>
                         </div>
@@ -90,6 +105,25 @@
 
     <footer class="footer">
         <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>FIVE-STAR JAPAN株式会社</h3>
+                    <p class="mb-md" style="color: #aaa; font-size: 0.9rem; line-height: 2;">
+                        〒100-0005<br>
+                        東京都千代田区丸の内1-1-1<br>
+                        TEL: 03-1234-5678
+                    </p>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">トップページ</a></li>
+                        <li><a href="company.html">会社概要</a></li>
+                        <li><a href="service.html">事業内容</a></li>
+                        <li><a href="cases.html">実績・事例</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="copyright">
                 &copy; 2024 FIVE-STAR JAPAN Co., Ltd. All Rights Reserved.
             </div>

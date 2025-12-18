@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>事業内容 | FIVE-STAR JAPAN株式会社</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,96 +19,117 @@
                     <li><a href="company.html" class="nav-link">会社概要</a></li>
                     <li><a href="service.html" class="nav-link active">事業内容</a></li>
                     <li><a href="cases.html" class="nav-link">実績・事例</a></li>
-                    <li><a href="contact.html" class="nav-link btn btn-primary">お問い合わせ</a></li>
+                    <li><a href="contact.html" class="nav-link btn btn-primary"
+                            style="padding: 10px 25px; color: white;">お問い合わせ</a></li>
                 </ul>
-                <button class="mobile-menu-btn">☰</button>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </nav>
         </div>
     </header>
 
     <main style="padding-top: var(--header-height);">
-        <section class="section bg-light">
+        <section class="section bg-light" style="padding-top: 80px; padding-bottom: 80px;">
             <div class="container text-center">
-                <h1>事業内容</h1>
-                <p>Service</p>
+                <h1 style="color: var(--color-primary); font-size: 2.5rem; margin-bottom: 10px;">事業内容</h1>
+                <p style="letter-spacing: 0.2em; font-family: var(--font-feature);">SERVICE</p>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
-                <p class="mb-lg">
+                <p class="text-center mb-xl" style="max-width: 800px; margin-left: auto; margin-right: auto;">
                     当社では、乗用車から大型トラックまで、あらゆる車両のトラブルに対応可能な体制を整えております。<br>
                     高度な技術を持ったスタッフが、最新の機材を用いて安全・確実に作業を行います。
                 </p>
 
-                <div class="mb-xl" style="margin-bottom: 60px;">
-                    <h2
-                        style="color: var(--color-primary); border-bottom: 2px solid var(--color-secondary); display: inline-block; margin-bottom: 30px;">
-                        レッカー移動サービス</h2>
-                    <div style="display: flex; gap: 30px; flex-wrap: wrap;">
-                        <div style="flex: 1; min-width: 300px;">
-                            <div
-                                style="background-color: #eee; height: 250px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                                <span style="color: #999;">レッカー作業イメージ</span>
-                            </div>
+                <div class="service-item">
+                    <div class="service-img">
+                        <div
+                            style="background-color: #ddd; height: 100%; min-height: 400px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color:#666; font-size: 2rem; font-weight: bold;">レッカー作業</span>
                         </div>
-                        <div style="flex: 1; min-width: 300px;">
-                            <h3>事故車・故障車の搬送</h3>
-                            <p>
-                                自走不可能となった車両を、ご指定の修理工場や保管場所まで搬送いたします。<br>
-                                ローダウン車や高級車の搬送にも対応可能なフルフラット積載車も配備しております。
-                            </p>
-                            <ul style="margin-top: 15px; list-style: disc; padding-left: 20px;">
-                                <li>24時間365日対応</li>
-                                <li>長距離搬送対応</li>
-                                <li>特殊車両対応</li>
-                            </ul>
-                        </div>
+                    </div>
+                    <div class="service-text">
+                        <h3>レッカー移動サービス</h3>
+                        <p>
+                            事故や故障で走行不能になったお車を、ご指定の修理工場や保管場所まで搬送いたします。
+                            ローダウン車や高級車の搬送にも対応可能なフルフラット積載車も配備しております。
+                        </p>
+                        <ul
+                            style="margin-top: 15px; list-style: disc; padding-left: 20px; color: var(--color-text-body);">
+                            <li style="margin-bottom: 8px;">24時間365日対応</li>
+                            <li style="margin-bottom: 8px;">長距離搬送対応</li>
+                            <li>特殊車両対応</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="mb-xl" style="margin-bottom: 60px;">
-                    <h2
-                        style="color: var(--color-primary); border-bottom: 2px solid var(--color-secondary); display: inline-block; margin-bottom: 30px;">
-                        路上トラブル対応</h2>
-                    <div style="display: flex; gap: 30px; flex-wrap: wrap; flex-direction: row-reverse;">
-                        <div style="flex: 1; min-width: 300px;">
-                            <div
-                                style="background-color: #eee; height: 250px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                                <span style="color: #999;">バッテリー作業イメージ</span>
-                            </div>
+                <div class="service-item">
+                    <div class="service-img">
+                        <div
+                            style="background-color: #ddd; height: 100%; min-height: 400px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color:#666; font-size: 2rem; font-weight: bold;">路上対応</span>
                         </div>
-                        <div style="flex: 1; min-width: 300px;">
-                            <h3>バッテリー上がり・パンク修理</h3>
-                            <p>
-                                現場で復旧可能なトラブルに対しては、その場で迅速に処置を行います。<br>
-                                バッテリージャンピング、スペアタイヤ交換、ガス欠時の給油など、ドライバー様の不安をいち早く解消します。
-                            </p>
-                            <ul style="margin-top: 15px; list-style: disc; padding-left: 20px;">
-                                <li>平均到着時間30分以内（エリアによる）</li>
-                                <li>バッテリー販売・交換も可能</li>
-                                <li>鍵の閉じ込め（インロック）開錠</li>
-                            </ul>
-                        </div>
+                    </div>
+                    <div class="service-text">
+                        <h3>路上トラブル対応</h3>
+                        <p>
+                            現場で復旧可能なトラブルに対しては、その場で迅速に処置を行います。
+                            バッテリージャンピング、スペアタイヤ交換、ガス欠時の給油など、ドライバー様の不安をいち早く解消します。
+                        </p>
+                        <ul
+                            style="margin-top: 15px; list-style: disc; padding-left: 20px; color: var(--color-text-body);">
+                            <li style="margin-bottom: 8px;">平均到着時間30分以内（エリアによる）</li>
+                            <li style="margin-bottom: 8px;">バッテリー販売・交換も可能</li>
+                            <li>鍵の閉じ込め（インロック）開錠</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="mb-xl">
-                    <h2
-                        style="color: var(--color-primary); border-bottom: 2px solid var(--color-secondary); display: inline-block; margin-bottom: 30px;">
-                        車両保管・預かり</h2>
-                    <p>
-                        夜間の事故などで搬送先が決まっていない場合、当社モータープールにて一時預かりも可能です。<br>
-                        屋根付き保管場所も完備しており、雨濡れなどを防ぎます。
-                    </p>
+                <div class="service-item">
+                    <div class="service-img">
+                        <div
+                            style="background-color: #ddd; height: 100%; min-height: 400px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color:#666; font-size: 2rem; font-weight: bold;">車両保管</span>
+                        </div>
+                    </div>
+                    <div class="service-text">
+                        <h3>車両保管・預かり</h3>
+                        <p>
+                            夜間の事故などで搬送先が決まっていない場合、当社モータープールにて一時預かりも可能です。
+                            屋根付き保管場所も完備しており、雨濡れなどを防ぎます。
+                        </p>
+                    </div>
                 </div>
-
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>FIVE-STAR JAPAN株式会社</h3>
+                    <p class="mb-md" style="color: #aaa; font-size: 0.9rem; line-height: 2;">
+                        〒100-0005<br>
+                        東京都千代田区丸の内1-1-1<br>
+                        TEL: 03-1234-5678
+                    </p>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">トップページ</a></li>
+                        <li><a href="company.html">会社概要</a></li>
+                        <li><a href="service.html">事業内容</a></li>
+                        <li><a href="cases.html">実績・事例</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="copyright">
                 &copy; 2024 FIVE-STAR JAPAN Co., Ltd. All Rights Reserved.
             </div>
