@@ -216,6 +216,7 @@ h6 {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    position: relative;
 }
 
 .logo {
@@ -223,11 +224,18 @@ h6 {
     font-weight: 800;
     color: var(--color-primary);
     letter-spacing: 0.05em;
+    z-index: 1001;
+    /* Ensure above center nav if overlap */
 }
 
 .nav-menu {
     display: flex;
     gap: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    justify-content: center;
 }
 
 .nav-link {
