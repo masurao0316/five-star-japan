@@ -608,4 +608,31 @@ h6 {
         font-size: 1.1rem;
         /* Smaller footer heading to prevent wrapping */
     }
+
+    /* Reduce vertical spacing on mobile */
+    .section {
+        padding: 40px 0;
+        /* Reduced from 100px */
+    }
+
+    :root {
+        --spacing-xl: 40px;
+        /* Adjust variable if used elsewhere */
+        --spacing-lg: 30px;
+    }
+
+    .service-item {
+        margin-bottom: 40px;
+        /* Reduced from 100px */
+    }
+
+    .hero-container {
+        padding-top: 60px;
+        /* Match mobile header height */
+    }
+}
+
+/* Remove hero gradient as requested */
+.hero-visual::after {
+    display: none;
 }
