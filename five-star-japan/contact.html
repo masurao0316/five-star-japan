@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | FIVE-STAR JAPAN株式会社</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">FIVE-STAR JAPAN</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">トップ</a></li>
+                    <li><a href="company.html" class="nav-link">会社概要</a></li>
+                    <li><a href="service.html" class="nav-link">事業内容</a></li>
+                    <li><a href="cases.html" class="nav-link">実績・事例</a></li>
+                    <li><a href="contact.html" class="nav-link active btn btn-primary">お問い合わせ</a></li>
+                </ul>
+                <button class="mobile-menu-btn">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top: var(--header-height);">
+        <section class="section bg-light">
+            <div class="container text-center">
+                <h1>お問い合わせ</h1>
+                <p>Contact</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container" style="max-width: 800px;">
+                <div class="text-center mb-xl">
+                    <p>
+                        ロードサービスの依頼、お見積もり、その他ご質問など、お気軽にお問い合わせください。<br>
+                        お急ぎの場合はお電話にてご連絡ください。
+                    </p>
+                    <div
+                        style="background-color: #fff; padding: 20px; border: 2px solid var(--color-primary); border-radius: 8px; margin: 30px auto; display: inline-block;">
+                        <p style="font-size: 14px; color: #666; margin-bottom: 5px;">お電話でのお問い合わせ</p>
+                        <p style="font-size: 32px; font-weight: bold; color: var(--color-primary);">03-1234-5678</p>
+                        <p style="font-size: 12px; color: #999;">24時間365日受付</p>
+                    </div>
+                </div>
+
+                <div class="bg-white"
+                    style="padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h2 class="text-center mb-lg">お問い合わせフォーム</h2>
+                    <form class="contact-form">
+                        <div>
+                            <label for="name">お名前 <span style="color: red;">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="例：山田 太郎" required>
+                        </div>
+                        <div>
+                            <label for="email">メールアドレス <span style="color: red;">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="例：info@example.com" required>
+                        </div>
+                        <div>
+                            <label for="tel">電話番号</label>
+                            <input type="tel" id="tel" name="tel" placeholder="例：090-1234-5678">
+                        </div>
+                        <div>
+                            <label for="message">お問い合わせ内容 <span style="color: red;">*</span></label>
+                            <textarea id="message" name="message" rows="6" placeholder="ご用件をご記入ください"
+                                required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary" style="min-width: 200px;">送信する</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; 2024 FIVE-STAR JAPAN Co., Ltd. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
