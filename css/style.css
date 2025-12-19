@@ -545,15 +545,17 @@ h6 {
     }
 
     .nav-link {
-        color: white;
-        font-size: 1.5rem;
+        color: var(--color-text-main);
+        /* Changed from white to dark because bg is white */
+        font-size: 1.2rem;
+        /* Adjusted for better fit */
         font-weight: 700;
     }
 
     .nav-link:hover,
     .nav-link.active {
-        color: white;
-        opacity: 0.7;
+        color: var(--color-primary);
+        opacity: 1;
     }
 
     .nav-link::after {
@@ -630,9 +632,67 @@ h6 {
         padding-top: 60px;
         /* Match mobile header height */
     }
+
+    /* Mobile Typography Adjustments */
+    .section-title {
+        font-size: 1.8rem;
+        /* Reduced from 2.5rem */
+    }
+
+    .service-text h3 {
+        font-size: 1.4rem;
+        /* Reduced from 1.8rem */
+    }
+
+    /* News Section Mobile */
+    .news-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .news-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .news-date {
+        font-size: 0.85rem;
+    }
 }
 
 /* Remove hero gradient as requested */
 .hero-visual::after {
     display: none;
 }
+
+/* News Section Styles */
+.news-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.news-label {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.news-content {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.news-date {
+    color: #999;
+}
+
+```
